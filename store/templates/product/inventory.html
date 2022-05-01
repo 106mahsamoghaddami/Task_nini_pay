@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> product</title>
+</head>
+<body>
+ <h3>{{ products.count }} result found</h3>
+ {% for product in products %}
+        <p> name of product : {{ product.name }}</p>
+        <p>brand of product : {{ product.brand }}</p>
+        <p>subcategory.category of product :  {{ product.subcategory.category }}</p>
+       <p> number of product :{{ product.count }} : </p>
+     <hr>
+{% endfor %}
+</body>
+</html>
